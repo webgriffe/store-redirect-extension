@@ -33,4 +33,17 @@
             </webgriffe_storeredirect_setup>
         </resources>
     </global>
+    <frontend>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <webgriffe_storeredirect>
+                        <type>singleton</type>
+                        <class>webgriffe_storeredirect/observer</class>
+                        <method>redirectToProperStoreView</method>
+                    </webgriffe_storeredirect>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+    </frontend>
 </config>
