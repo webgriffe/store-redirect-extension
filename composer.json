@@ -1,0 +1,12 @@
+{
+    "name": "webgriffe/store-redirect-extension",
+    "type": "magento-module",
+    "license":"MIT",
+    "description":"Magento extension that allows to automatically redirect the user to the right store view",
+    "authors":[
+        {
+            "name":"Webgriffe SRL",
+            "email":"support@webgriffe.com"
+        }
+    ]
+}

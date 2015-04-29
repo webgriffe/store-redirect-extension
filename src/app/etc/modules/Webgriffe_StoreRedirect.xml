@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webgriffe_StoreRedirect>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Webgriffe_StoreRedirect>
+    </modules>
+</config>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webgriffe_StoreRedirect>
+            <version>1.0.0</version>
+        </Webgriffe_StoreRedirect>
+    </modules>
+    <global>
+        <models>
+            <webgriffe_storeredirect>
+                <class>Webgriffe_StoreRedirect_Model</class>
+                <resourceModel>webgriffe_storeredirect_resource</resourceModel>
+            </webgriffe_storeredirect>
+            <webgriffe_storeredirect_resource>
+                <class>Webgriffe_StoreRedirect_Model_Resource</class>
+            </webgriffe_storeredirect_resource>
+        </models>
+        <blocks>
+            <webgriffe_storeredirect>
+                <class>Webgriffe_StoreRedirect_Block</class>
+            </webgriffe_storeredirect>
+        </blocks>
+        <helpers>
+            <webgriffe_storeredirect>
+                <class>Webgriffe_StoreRedirect_Helper</class>
+            </webgriffe_storeredirect>
+        </helpers>
+        <resources>
+            <webgriffe_storeredirect_setup>
+                <setup>
+                    <module>Webgriffe_StoreRedirect</module>
+                </setup>
+            </webgriffe_storeredirect_setup>
+        </resources>
+    </global>
+</config>
