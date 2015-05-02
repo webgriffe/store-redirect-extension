@@ -1,0 +1,5 @@
+/.modman/
+/ci.sh
+/composer.lock
+/magento/
+/vendor/
