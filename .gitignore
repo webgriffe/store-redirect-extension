@@ -1,3 +1,4 @@
+/.idea/
 /.modman/
 /ci.sh
 /composer.lock

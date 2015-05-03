@@ -46,4 +46,11 @@
             </controller_action_predispatch>
         </events>
     </frontend>
+    <phpunit>
+        <suite>
+            <modules>
+                <Webgriffe_StoreRedirect />
+            </modules>
+        </suite>
+    </phpunit>
 </config>

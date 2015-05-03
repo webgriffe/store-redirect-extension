@@ -1,0 +1,19 @@
+scope:
+  store:
+    # Store ID 1 is the default store view
+    - store_id: 2
+      code: fr
+      name: French Store
+      group_id: 1
+      website_id: 1
+      is_active: 1
+    - store_id: 3
+      code: de
+      name: German Store
+      group_id: 1
+      website_id: 1
+      is_active: 1
+config:
+  default/general/locale/code: en
+  stores/fr/general/locale/code: fr
+  stores/de/general/locale/code: de
