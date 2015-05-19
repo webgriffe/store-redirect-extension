@@ -29,6 +29,11 @@ class Webgriffe_StoreRedirect_Model_Observer
         /** @var Mage_Core_Controller_Front_Action $action */
         $action = $event->getControllerAction();
         $storeView = $storeSelectStrategy->select($action->getRequest());
+        
+        if ($storeView->getId() == Mage::app()->getStore()->getId()) {
+            return;
+        }
+        
         $helper->setLocaleChecked();
         // generate redirect url
         $action->getResponse()->setRedirect(
