@@ -56,11 +56,17 @@ class Webgriffe_StoreRedirect_Model_Service_StoreSelect_BrowserLocaleStrategy
                 // set default to 1 for any without q factor
                 foreach ($locales as $locale => $val) {
                     if ($val === '') {
-                        $locales[$locale] = 1;
+                        $locales[$locale] = floatval(1);
+                    } elseif (is_numeric($val)) {
+                        $locales[$locale] = floatval($val);
+                    } else {
+                        $locales[$locale] = 0.01;
                     }
                 }
             }
-            $locales[$this->__getDefaultLanguage()] = 0.01;
+            if (!isset($locales[$this->__getDefaultLanguage()])) {
+                $locales[$this->__getDefaultLanguage()] = 0.01;
+            }
         } else {
             $locales[$this->__getDefaultLanguage()] = 1;
         }
